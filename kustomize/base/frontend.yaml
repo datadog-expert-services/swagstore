@@ -117,5 +117,5 @@ spec:
     app: frontend
   ports:
   - name: http
-    port: 80
-    targetPort: 32144
+    nodePort: 31000
+    targetPort: 8080

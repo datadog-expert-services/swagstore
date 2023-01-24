@@ -131,7 +131,7 @@ spec:
 # for my own personal on-prem k8s cluster
 #  type: LoadBalancer
 # # for AWS EKS cluster, you can restrict access to your public IP
-  type: LoadBalancer
+  type: NodePort
   # loadBalancerSourceRanges:
   # - "80.117.68.35/32"
   # loadBalancerSourceRanges:
@@ -140,5 +140,5 @@ spec:
     app: frontend
   ports:
   - name: http
-    port: 80
+    nodePort: 31000
     targetPort: 8080
