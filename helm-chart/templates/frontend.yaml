@@ -140,6 +140,7 @@ spec:
     app: {{ .Values.frontend.name }}
   ports:
   - name: http
+    port: 80
     nodePort: 31000
     targetPort: 8080
 {{- end }}
