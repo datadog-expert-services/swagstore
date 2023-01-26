@@ -53,7 +53,6 @@ FROM without-grpc-health-probe-bin
 
 ARG TARGETOS 
 ARG TARGETARCH
-LABEL org.opencontainers.image.source https://github.com/datadog-expert-services/swagstore
 RUN echo ${TARGETOS}
 RUN echo ${TARGETARCH}
 
